@@ -1,0 +1,161 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Product Sans';
+    outline: none;
+}
+
+body {
+    background-color: #333;
+}
+
+.btn {
+    padding: 8px 16px;
+    margin: 50px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 3px;
+    background-color: #ffffff;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    max-width: 340px;
+    margin: 0 auto;
+}
+
+.container h1 {
+    color: #fff;
+    margin-bottom: 50px;
+    text-shadow: 1px 1px #fff;
+}
+
+.block {
+    background-color: #d8bfd8;
+    width: 70px;
+    height: 70px;
+    margin: 5px;
+    border-radius: 3px;
+    border: 0px solid #fff;
+    cursor: pointer;
+    transition: 0.7s;
+}
+
+.colors {
+    display: flex;
+    margin-bottom: 25px;
+}
+
+.menuSelect {
+    width: 22px;
+    height: 22px;
+    margin: 5px;
+    border-radius: 1000px;
+    cursor: pointer;
+}
+
+.btnLight {
+    background-color: #d8bfd8;
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+.btnShuffle {
+    color: #d8bfd8;
+    font-weight: bold;
+    border: 1px solid #d8bfd8;
+}
+
+.border {
+    border: 1px solid #fff;
+    transition: 0.1s;
+}
+
+.red {
+    background-color: red;
+    transition: 0.7s;
+}
+
+.blue {
+    background-color: blue;
+    transition: 0.7s;
+}
+
+.green {
+    background-color: green;
+    transition: 0.7s;
+}
+
+.yellow {
+    background-color: yellow;
+    transition: 0.7s;
+}
+
+.btnRestart {
+    background-color: #fff;
+    color: #d8bfd8;
+    border: 1px solid #d8bfd8;
+    font-weight: bold;
+    margin: 25px;
+}
+
+.menuSelectRedLight, .menuSelectBlueLight, .menuSelectGreenLight, .menuSelectYellowLight{
+    width: 16px;
+    height: 16px;
+    margin: 5px;
+    border-radius: 3px;
+    cursor: pointer;
+    border: none;
+}
+
+.border2 {
+    border: 3px solid #333;
+    border-radius: 5px;
+}
+
+.restart {
+    float: right;
+    top: 0;
+    right: 0;
+    position: absolute;
+}
+
+.menuSelectLight {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* Animação */
+
+@keyframes showDown {
+    from{
+        transform: translateY(-8px);
+    }
+
+    to {
+        transform: translateY(0px);
+    }
+}
+
+.showDown {
+    animation-name: showDown;
+    animation-duration: 0.2s;
+}
+
+
+
+
